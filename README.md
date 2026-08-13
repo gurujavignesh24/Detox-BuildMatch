@@ -1,145 +1,207 @@
 # DETOX BuildMatch
 
-DETOX BuildMatch is a professional company-style website and interactive MVP prototype for helping community members turn opportunities into project-ready teams.
+A modern web platform that helps people discover opportunities, find suitable collaborators, form teams, manage projects, and showcase completed work.
 
-The platform demonstrates the full journey:
+🔗 **Live Demo:** https://detox-buildmatch.netlify.app/
 
-`Discover opportunity -> Review details -> Define roles -> Match teammates -> Form team -> Build in workspace -> Request mentor feedback -> Track progress -> Showcase`
+---
 
-## Project Summary
+## Overview
 
-Students and community members often find hackathons, internships, competitions, and project opportunities, but struggle to form the right team and stay organized until submission. DETOX BuildMatch solves this by combining opportunity discovery, explainable teammate matching, team formation, project workspaces, mentor requests, and progress/showcase tracking in one connected experience.
+DETOX BuildMatch is a collaborative project discovery and team-building platform designed to simplify the journey from finding an opportunity to building a project with the right people.
 
-This repository contains a static frontend prototype built for hackathon presentation and judging.
+The platform brings opportunity discovery, skill-based team matching, project management, mentorship, progress tracking, and project showcasing into a single experience.
 
-## Key Features
+Instead of using multiple platforms to find opportunities, search for collaborators, plan projects, and track progress, users can manage the entire workflow from one place.
 
-- Professional DETOX-branded company homepage
-- Animated phoenix signal-field background inspired by the uploaded logo
-- About, Contact, Sign in, and Create account pages
-- Working local-state signup/signin experience
-- Working contact form with saved demo inquiries
-- Opportunity feed with filters and smart opportunity radar
-- Opportunity details with project blueprint
-- Role definition and role optimizer
-- Explainable teammate matching with match inspector
-- Team formation and invite acceptance flow
-- Project workspace with tasks, milestones, mentor notes, and activity log
-- Mentor request and mentor review state
-- Progress dashboard and final showcase screen
-- Launch pack generator for judging/submission proof
-- Guided demo flow for fast presentations
-- Responsive desktop and mobile layout
+---
 
-## Tech Stack
+## ✨ Features
 
-- HTML
-- CSS
-- JavaScript
-- Browser localStorage for prototype state
-- Canvas and SVG animations for the custom background
+### 🔎 Opportunity Discovery
 
-No backend, database, build tool, or package installation is required.
+Browse and explore opportunities based on categories, skills, deadlines, and interests.
 
-## How to Run Locally
+### 👥 Team Matching
 
-Open `index.html` directly in a browser.
+Discover potential collaborators based on their skills, interests, roles, and project requirements.
 
-Recommended:
+### 💡 Idea to Project
 
-1. Download or clone this repository.
-2. Open the project folder.
-3. Double-click `index.html`.
+Convert an initial idea into a structured project with defined goals, required skills, roles, milestones, and tasks.
 
-The app will run completely in the browser.
+### 📋 Project Workspace
 
-## Demo Flow
+Manage projects through tasks, milestones, team members, deadlines, and progress tracking.
 
-1. Start on the DETOX BuildMatch homepage.
-2. Create a demo account or sign in.
-3. Open the Platform page.
-4. Run the smart opportunity scan.
-5. Open the featured opportunity.
-6. Review the opportunity details and blueprint.
-7. Define needed project roles.
-8. Inspect explainable teammate matches.
-9. Auto-fill or manually invite teammates.
-10. Create the project workspace.
-11. Add or complete tasks and milestones.
-12. Request and resolve mentor feedback.
-13. Open the Showcase page.
-14. Generate the launch pack.
-15. Submit the final showcase.
+### 🎯 Skill Matching
 
-Use `Guided demo` for a fast automatic walkthrough.
+Identify missing skills within a project and discover members who can fill those roles.
 
-## Deployment
+### 🧑‍🏫 Mentor Connect
 
-This is a static website, so it can be deployed on any static hosting platform.
+Request feedback and guidance from mentors based on the needs of a project.
 
-### Netlify Drop
+### 📈 Progress Tracking
 
-1. Go to `https://app.netlify.com/drop`.
-2. Drag and drop the project folder.
-3. Netlify will generate a live URL.
+Monitor project progress, completed tasks, milestones, deadlines, and team activity.
 
-### Vercel
+### 🚀 Project Showcase
 
-1. Push this folder to a GitHub repository.
-2. Import the repository into Vercel.
-3. Use these settings:
-   - Framework: Other
-   - Build command: leave empty
-   - Output directory: `.`
-4. Deploy.
+Showcase completed projects with their teams, technologies, descriptions, demos, and repositories.
 
-### GitHub Pages
+### 📊 Community Insights
 
-1. Push the project to GitHub.
-2. Go to repository Settings.
-3. Open Pages.
-4. Select the branch and root folder.
-5. Save and wait for the published URL.
+Visualize project and collaboration metrics through an interactive dashboard.
 
-## Folder Structure
+---
+
+## 🔄 How It Works
 
 ```text
-detox-buildmatch-prototype/
-  index.html
-  styles.css
-  app.js
-  README.md
-  assets/
-    detox-phoenix-logo.png
-    detox-phoenix-logo-white.png
-    journey-map.png
-    opportunity-preview.png
-    showcase-preview.png
+Discover an Opportunity
+          ↓
+Create / Select a Project
+          ↓
+Identify Required Skills
+          ↓
+Find Collaborators
+          ↓
+Build Your Team
+          ↓
+Create Project Plan
+          ↓
+Track Tasks & Milestones
+          ↓
+Get Feedback
+          ↓
+Complete Project
+          ↓
+Showcase Your Work
 ```
 
-## Prototype Notes
+---
 
-- Signup and contact form data are saved in the browser using localStorage.
-- The app does not include a real backend or database.
-- Refreshing the browser keeps local demo state unless browser storage is cleared.
-- The Reset option in the footer restores the original demo state.
+## 🖥️ Main Sections
 
-## Future Scope
+| Section        | Purpose                                            |
+| -------------- | -------------------------------------------------- |
+| Dashboard      | Overview of projects, opportunities, and activity  |
+| Opportunities  | Discover available opportunities                   |
+| Ideas          | Create and manage project ideas                    |
+| Find Teammates | Discover suitable collaborators                    |
+| Projects       | Manage active and completed projects               |
+| Mentors        | Find mentors and request feedback                  |
+| Progress       | Track project milestones and tasks                 |
+| Showcase       | Explore completed projects                         |
+| Impact         | View platform and project insights                 |
+| Profile        | Manage skills, interests, and personal information |
 
-- Real authentication
-- Backend API for opportunities, users, teams, tasks, and mentor requests
-- Database storage with PostgreSQL or Firebase/Supabase
-- Organizer dashboard
-- Mentor dashboard
-- AI-powered matching and project planning
-- Calendar integrations for deadlines and mentor sessions
-- Public project showcase gallery
-- Analytics for opportunity-to-team conversion and completion rate
+---
 
-## Project Goal
+## 🛠️ Tech Stack
 
-DETOX BuildMatch is built to show how a community can move from:
+### Frontend
 
-`Opportunity -> People -> Team -> Project -> Mentorship -> Progress -> Completion -> Showcase`
+* React
+* TypeScript
+* Vite
 
-The goal is to help more members participate successfully, form stronger teams, and complete more projects.
+### UI & Styling
+
+* Tailwind CSS
+* Responsive design
+* Modern component-based UI
+
+### Icons & Visualization
+
+* Lucide Icons
+* Recharts
+
+### State & Data
+
+* Client-side state management
+* Local storage for prototype persistence
+* Structured mock data
+
+### Deployment
+
+* Netlify
+
+---
+
+## 🎨 Design
+
+The interface focuses on a clean and modern experience with:
+
+* Responsive layouts
+* Consistent design system
+* Clear navigation
+* Interactive components
+* Accessible UI patterns
+* Data-driven dashboards
+* Mobile-friendly layouts
+
+---
+
+## 📱 Responsive Design
+
+The platform is designed to work across:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile devices
+
+The navigation and content layouts adapt based on screen size for a consistent experience.
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+Make sure you have installed:
+
+* Node.js
+* npm
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+```
+
+### Navigate to the Project
+
+```bash
+cd YOUR_REPOSITORY
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start the Development Server
+
+```bash
+npm run dev
+```
+
+The application will be available at the local development URL shown in your terminal.
+
+---
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+To preview the production build:
+
+```bash
+npm run preview
+```
